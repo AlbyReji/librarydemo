@@ -1,0 +1,17 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Book Detail{% endblock title %}
+
+{% block content %}
+  <h1>Book Detail</h1>
+
+  {% if bk %}
+    <div>
+      <h2>{{ bk.titles }}</h2>
+      <p>{{ bk.description }}</p>
+    </div>
+  {% else %}
+    <p>Book not found.</p>
+  {% endif %}
+{% endblock content %}
