@@ -1,0 +1,29 @@
+8. Generate django orm query for the following:
+
+1. Find Books which are available
+
+->  Available_Books = book.object.filter(is_avaible = TRUE)
+   
+2. Find books whose title has 'The Great'
+
+-> books_title = book.objects.filter(title ='The Great')
+
+3. Find books with rating >= 4
+
+-> Rating = book.objects.filter(rating = 4)
+
+4. Find books published in the year 2002
+
+-> Year = book.objects.filter(publication_date = '2022-1-1')
+
+5. Query all Genres of a Book
+   
+-> genre = book.genre.all()
+
+6. Query All books of a given Genre
+
+-> book_genre = genre.book.filter(genre = genre)
+
+7. Query all books by a given Author
+
+-> author = author.book.filter(author = author)

@@ -9,10 +9,33 @@
 
 
  <ul>
-    {% for book in book_list %}
+    {% for bk in Books %}
     <li>
-        {{ book.titles }}
-    </li>
+        <label>Book name : </label>
+        {{ bk.title }}<br>
+
+        <label>Author : </label>
+        {{ bk.author }}<br>
+
+        <label>Publication date: </label>
+        {{ bk.publication_date }}<br>
+
+        <label>Price : </label>
+        {{ bk.price }}<br>
+
+        <label>Description : </label>
+        {{ bk.description }}<br>
+
+        <label>Book category  : </label>
+        {{ bk.category }}<br>
+
+        <label>Genre : </label>
+        {{ bk.genre }}<br>
+
+        <label>Book Rating : </label>
+        {{ bk.rating }}<br>
+
+    </li><br>
     {% endfor %}
  </ul> 
 

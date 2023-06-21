@@ -5,13 +5,37 @@
 
 {% block content %}
   <h1>Book Detail</h1>
+  <ul>
 
-  {% if bk %}
-    <div>
-      <h2>{{ bk.titles }}</h2>
-      <p>{{ bk.description }}</p>
-    </div>
-  {% else %}
-    <p>Book not found.</p>
-  {% endif %}
+    <li>
+        <label>Book name : </label>
+        {{ Books.title }}<br>
+
+        <label>Author : </label>
+        {{ Books.author }}<br>
+
+        <label>Publication date: </label>
+        {{ Books.publication_date }}<br>
+
+        <label>Price : </label>
+        {{ Books.price }}<br>
+
+        <label>Description : </label>
+        {{ Books.description }}<br>
+
+        <label>Book category  : </label>
+        {{ Books.category }}<br>
+
+        <label>Genre : </label>
+        {{ Books.genre }}<br>
+
+        <label>Book Rating : </label>
+        {{ Books.rating }}<br>
+
+    </li><br>
+
+ </ul> 
+
+
+ 
 {% endblock content %}
